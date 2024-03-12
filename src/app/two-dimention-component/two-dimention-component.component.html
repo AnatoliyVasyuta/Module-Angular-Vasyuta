@@ -1,0 +1,21 @@
+
+<div class="container">
+    <input type="number" [(ngModel)]="base" placeholder="Основание (base)" min="0">
+    <input type="number" [(ngModel)]="height" placeholder="Высота (height)" min="0">
+    <button (click)="calculate()">Обчислити</button>
+    <div class="result">
+        <p>Периметр трикутника з заданими параметрами:  {{ perimeter }}</p>
+        <p>Площа трикутника з заданими параметрами: {{ area }}</p>
+    </div>
+
+
+    <div class="result">
+        <p>Периметр ромба з заданими параметрами: {{ perimeterR }}</p>
+        <p>Площа  ромба з заданими параметрами:{{ areaR }}</p>
+    </div>
+
+    <div class="result">
+        <p>Периметр трапеції з заданими параметрами: {{ perimeterT }}</p>
+        <p>Площа трапеції з заданими параметрами: {{ areaT }}</p>
+    </div>
+</div>

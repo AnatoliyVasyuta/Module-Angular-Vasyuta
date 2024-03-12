@@ -1,0 +1,42 @@
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .gradient-text {
+    background: -webkit-linear-gradient(left, #007bff, #8811c5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Arial, sans-serif;
+    margin: 0;
+  }
+  
+ 
+  h2 {
+    color: #555;
+  }
+  
+
+  .surname-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .surname-list p {
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 8px 16px;
+    width: fit-content;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .surname-list p:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  

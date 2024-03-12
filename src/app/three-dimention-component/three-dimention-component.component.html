@@ -1,0 +1,26 @@
+
+<div class="container">
+    <label for="sideLength">довжина стороны основи (a):</label>
+    <input type="number" id="sideLength" [(ngModel)]="sideLength" min="0">
+  
+    <label for="height">Висота (h):</label>
+    <input type="number" id="height" [(ngModel)]="height" min="0">
+  
+    <button (click)="calculateVolume()">Обчислити</button>
+  
+    <div *ngIf="volume !== null">
+      <p>об'єм 5-сторонньої пірамиды: {{ volume }}</p>
+    </div>
+    <div *ngIf="surfaceArea !== null">
+        <p>площа поверхні 5-сторонньої пірамиды: {{ surfaceArea }}</p>
+      </div>
+
+      <div *ngIf="surfaceArea !== null">
+        <p>радіус вписаного кола 5-сторонньої пірамиды: {{ inscribedCircleRadius }}</p>
+      </div>
+      
+      <div *ngIf="circumscribedCircleRadius !== null">
+        <p>радіус описаного кола 5-сторонньої пірамиды:{{ circumscribedCircleRadius }}</p>
+      </div>
+  </div>
+  

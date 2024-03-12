@@ -1,0 +1,67 @@
+
+.container {
+    max-width: 500px;
+    margin: 2em auto;
+    padding: 1em;
+    background: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  p:first-of-type {
+    color: #555;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  input[type="number"] {
+    width: calc(100% - 20px);
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  input[type="number"]:focus {
+    border-color: #0066ff;
+    box-shadow: 0 0 0 2px rgba(0, 102, 255, 0.2);
+  }
+  
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0088cc;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0077b3;
+  }
+  
+  
+  .result {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: white;
+    border-left: 5px solid #0088cc;
+    border-radius: 5px;
+  }
+  
+  .result p {
+    margin: 5px 0;
+    color: #333;
+  }
+  
+  
+  .result p:nth-of-type(1) {
+    font-weight: bold;
+    color: #0088cc;
+  }
+  
